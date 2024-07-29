@@ -148,10 +148,12 @@ const Signup: React.FC = () => {
               <option value="Eastern Province">Eastern Province</option>
               <option value="Western Province">Western Province</option>
             </select>
-          </div>{" "}
+          </div>
           <br /> <br />
           <div>
-            <button type="submit">Sign up</button>
+            <Link to="/allproducts">
+              <button type="submit">Sign up</button>
+            </Link>
           </div>
           <p>
             Already have an account? <Link to="/login">Sign in</Link>
