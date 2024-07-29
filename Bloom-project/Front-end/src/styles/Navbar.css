@@ -1,0 +1,35 @@
+.header {
+    display: flex;
+    background-color: #1C4D20;
+    color: white;
+    gap: 50%;
+  }
+  
+  .header img{
+    padding-left: 30%;
+    width: 80px;
+    height: 70px;
+  }
+  .header nav ul {
+    padding-top: 25px;
+    display: flex;
+    list-style: none;
+    gap: 15%;
+  }
+  .header nav {
+    display: flex;
+    gap: 65%;
+  }
+  .header nav ul li a {
+    color: white;
+    text-decoration: none;
+  }
+.header button{
+    margin-top: 30%;
+    padding: 7px;
+    background-color: white;
+    color: green;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

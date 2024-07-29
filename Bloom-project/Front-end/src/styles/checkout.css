@@ -1,0 +1,128 @@
+.thankyou {
+    text-align: center;
+ }
+ 
+.buttons {
+    font-size: 16px;
+    margin-left: 40%;
+    margin-top: 50px;
+
+}
+.buttons button {
+    background-color: white;
+    color: rgb(2, 71, 2);
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 3%;
+    margin-top: 50px;
+  }
+  .buttons button:hover {
+    background-color: rgb(214, 223, 214);
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .checkout-container {
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
+  .totals {
+    height: 77.5vh;
+    width: 40%;
+    background-color: #175525;
+    border-radius: 2px;
+    padding-top: 5%;
+  }
+
+  .totals h2 {
+    text-align: center;
+    color: white;
+    padding-bottom: 7%;
+  }
+
+  .totals p {
+    text-align: center;
+    color: white;
+  }
+
+  
+.payment-methods {
+    padding-top: 5%;
+    width: 40%;
+  }
+  .cardpayment label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+  .payment-methods h2{
+    color: #136627;
+    padding-bottom: 5%;
+    padding-left: 15%;
+  }
+
+  .payment-methods h3{
+    padding-bottom: 3%;
+    font-size: 17px;
+  }
+.directpayment {
+    padding-top: 7%;
+    display: flex;
+    gap: 5px;
+}
+.momopayment{
+    width: 47%;
+}
+  .cardpayment input {
+    padding: 2px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #ccc;
+    width: 60%;
+    margin-bottom: 10px;
+  }
+  
+.payment-methods button {
+    margin-top: 3%;
+    background-color: #196e2e;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+.payment-methods button:hover {
+    background-color: #3f814d;
+  }
+
+  .popup {
+    position: fixed;
+    top: 55%;
+    left: 50%;
+    height: 300px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #0d4219;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  }
+.popup h3 {
+  padding-top: 10%;
+  text-align: center;
+  padding-bottom: 4%;
+}
+  .popup p {
+    padding-left: 10%;
+    padding-right: 10%;
+
+  }
+  

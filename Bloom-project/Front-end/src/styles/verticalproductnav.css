@@ -1,0 +1,38 @@
+.navbar{
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  border: 1px solid #CCCCCC;
+  height: 85vh;
+  width: 120%;
+  margin-top: -9.5%;
+  cursor: pointer;
+}
+
+.navbar img{
+  width: 80px;
+  height: 75px;
+}
+.navlogo{
+  padding-top: 5%;
+  padding-left: 30%;
+}
+.navbar ul {
+  padding-top: 20%;
+  list-style: none;
+}
+.navbar li {
+  padding : 12px 50px;
+  text-align: center;
+  border-bottom: 1px solid #cccccc;
+}
+
+.navbar li a {
+ font-size: 17px;
+  text-decoration: none;
+  color: black;
+}
+
+ul li:hover{
+  background-color: rgba(223, 228, 252, 0.397);
+}

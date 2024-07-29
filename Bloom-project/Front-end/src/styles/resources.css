@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+}
+
+.resources{
+    background-color: #c2e1c72c;
+}
+.searchresources {
+    float: right;
+    margin-right: 35%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+}
+.searchresources input{
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    padding: 8px;
+    width: 250px;
+
+}
+.searchresources button{
+    margin-left: -15%;
+    background-color: transparent;
+   border: none;
+    border-radius: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+.search button i{
+   
+    color: #cccccc;
+    font-size: 17px;
+}
+
+.intro img{
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+    width: 100%;
+}
+
+.facts {
+    display: flex;
+    gap: 2px;
+    margin-top: -50px;
+    width: 60%;
+    padding: 0 100px;
+    padding-left: 28%;
+}
+
+.fact-card {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+     border: 1px solid #cccc;
+    width: 20%;
+    height: 30vh;
+    margin: 0 10px;
+}
+.fact-card h3 {
+    padding: 20px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 17px;
+
+}
+.fact-card h3 span {
+    padding-left: 50px;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    text-align: center;
+}
+
+#healthtips{
+    padding-top: 8%;
+}
+
+.cardheader {
+    padding-left: 5px;
+    display: flex;
+    gap: -2%;
+    align-items: center;
+}
+
+.cardheader h3{
+    margin-left: -13%;
+
+}
+
+.tip-card {
+    display: flex;
+    gap: 10px;
+    background: white;
+    padding: 40px 30px;
+    width: 70%;
+    border-radius: 10px;
+    margin: 20px 170px;
+    border: 1px solid #cccc;
+}
+
+.tip-card button {
+    color: white;
+    background: #157106;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 45%;
+}
+
+.tip-text {
+    width: 55%;
+    padding: 20px;
+    
+}
+.tip-text h2{
+      font-size: 18px;
+    text-align: center;
+    color: #157106;
+}
+.tip-text p{
+    padding-top: 30px;
+}
+
+.tip-image {
+    width: 30%;
+    height: 10vh;
+
+}
+.tip-image img {
+    width: 100%;
+    height: 30vh;
+}

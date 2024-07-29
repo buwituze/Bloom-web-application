@@ -1,0 +1,360 @@
+* {
+        margin: 0;
+        padding: 0;
+   }
+
+
+.hero-layer {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 97vh;
+    width: 100%;
+  }
+
+.hero-section {
+    background-image: url("/agro.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 93vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+  }
+
+.hero-content {
+    width: 30%;
+    text-align: left;
+    align-items: center;
+    padding-top: 15%;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+.hero-content h1 {
+    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+
+.hero-content h1 span {
+  padding-left: 14%;
+    color: #1DC202;
+  }
+
+.hero-content p {
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+
+.hero-content button {
+    background-color: white;
+    color: green;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+.about-section {
+    background-color: rgba(192, 246, 246, 0.15);
+    height: 70vh;
+    align-items: center;
+
+  }
+
+.about-section h3 {
+    font-size: xx-large;
+    color: green;
+    text-align: center;
+    padding-top: 4%;
+  }
+.about{
+    width: 70%;
+    padding-left: 17%;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+.about p{
+    padding-top: 2%;
+}
+.aboutimage img{
+    width: 350px;
+    height: 340px;
+}
+
+.productcategories-section {
+    background-color: white;
+    height: 70vh;
+    align-items: center;
+  }
+
+.productcategories-section h3 {
+    font-size: xx-large;
+    color: green;
+    text-align: center;
+    padding-top: 3%;
+  }
+
+.product-categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 3%;
+  }
+
+.product-category {
+    width: 170px;
+    height: 230px;
+    background-color: #EDFEEE;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    text-align: center;
+  }
+
+.product-category img {
+    width: 150px;
+    height: 150px;
+  }
+
+.product-category p {
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 5%;
+}
+
+.product-category button {
+    background-color: white;
+    color: green;
+    border: none;
+    border: 1px solid #cccc;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+.services-section {
+    background-color: #FFFFFF;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+
+.services-section h3 {
+    font-size: xx-large;
+    color: green;
+    text-align: center;
+    padding-bottom: 4%;
+  }
+
+.feature-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 3%;
+  }
+
+.feature-item {
+    width: 240px;
+    height: 290px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #CCCCCC;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+    justify-content: center; 
+  }
+
+.feature-item img {
+    width: 80px;
+    height: 80px;
+  }
+
+.feature-item h4 {
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 5%;
+}
+
+.feature-item p {
+    font-size: 13px;
+    padding-top: 2%;
+}
+
+
+.preview {
+    height: 90vh;
+    align-items: center;
+
+  }
+
+.preview h4 {
+    font-size: 21px;
+    color: green;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+.productpreview{
+    width: 80%;
+    padding-left: 10%;
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+.image{
+    background-color: #C3FF76;
+    padding: 60px;
+    border-radius: 20px;
+}
+.text h5{
+    color: green;
+    font-size: 18px;
+    padding-top: 9%;
+    padding-bottom: 3%;
+}
+.preductpreview p{
+    padding-top: 5%;
+    padding-right: 20%;
+}
+.price{
+  padding-top: 4%;
+    color: rgb(170, 7, 7);
+    font-weight: bold;
+}
+.preview img{
+    width: 280px;
+    height: 270px;
+}
+
+.button{
+    padding-top: 5%;
+    padding-left: 35%;
+}
+.button button{
+  
+    background-color: green;
+    color: white;
+    border: none;
+    border: 1px solid #cccc;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+
+.contact {
+  
+    padding-left: 24%;
+    padding-right: 24%;
+  }
+
+.contact h3 {
+    color: green;
+    text-align: center;
+    padding-top: 15%;
+    padding-bottom: 7%;
+    font-size: xx-large;
+  }
+
+form {
+    
+    padding: 5% 10% 5% 30%;
+    border: 1px solid #cccc;
+    border-radius: 20px;
+  } 
+
+form h4 {
+    color: green;
+    padding-bottom: 13%;
+    padding-left: 15%;
+  }
+
+form input {
+
+    width: 300px;
+    height: 30px;
+    border: 1px solid #cccc;
+    padding-left: 10px;
+  }
+
+form textarea {
+    width: 300px;
+    height: 100px;
+    border: 1px solid #cccc;    
+    border-radius: 10px;
+    padding-left: 10px;
+  }
+
+form button {
+    background-color: green;
+    color: white;
+    margin-left: 30%;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+
+.footer-section {
+    background-color: black;
+    color: white;
+ margin-top: 7%;
+
+  
+  }
+
+.toppart {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-bottom: 1px solid #cccc;
+  }
+
+.toppart h3 {
+    color: white;
+  }
+
+.bottompart {
+    display: flex;
+    gap: 10%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  } 
+
+.footerimage img{
+    width: 150px;
+    height: 150px;
+  }
+
+.bottompart ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+.bottompart ul{
+    list-style: none;
+}
+.bottompart h5{
+    padding-top: 10%;
+    color: white;
+    font-size: 17px;
+    padding-bottom: 10px;
+    padding-left: 35px;
+}

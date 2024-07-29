@@ -1,0 +1,52 @@
+
+.footer-section {
+    background-color: black;
+    color: white;
+ margin-top: 7%;  
+  }
+
+.toppart {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    border-bottom: 1px solid #cccc;
+  }
+
+.toppart h3 {
+    color: white;
+  }
+
+.bottompart {
+    display: flex;
+    gap: 13%;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  } 
+
+.footerimage img{
+    width: 150px;
+    height: 150px;
+  }
+
+.bottompart ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+.bottompart ul{
+    list-style: none;
+}
+.bottompart h5{
+    padding-top: 30px;
+    color: white;
+    font-size: 17px;
+    padding-bottom: 20px;
+    padding-left: 0px;
+}
+
+.Support{
+  padding-top: -20%;
+}

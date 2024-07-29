@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+}
+
+body{
+    width: 100%;
+  
+
+}
+
+
+.searchnews {
+    float: right;
+    margin-right: 35%;
+    /* margin-top: 1%; */
+    margin-bottom: 5%;
+    display: flex;
+}
+.searchnews input{
+    border: 1px solid #cccccc;
+    border-radius: 20px;
+    padding: 8px;
+    width: 250px;
+
+}
+.searchnews button{
+    margin-left: -15%;
+    background-color: transparent;
+   border: none;
+    border-radius: 10px;
+    padding: 8px;
+    cursor: pointer;
+}
+.searchnews button i{
+    color: #cccccc;
+    font-size: 17px;
+}
+/*darken the intro img picture*/
+
+.newsintro {
+    position: relative;
+}
+
+.newsintro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.13);
+}
+
+.newsintro::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.103);
+}
+
+.newsintro img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+
+
+.newsintro h2{
+    position: absolute;
+    top: 200px;
+    left: 810px;
+    font-size: 46px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    width: 17%;
+}
+#healthtips{
+    padding-top: 3%;
+    background-color: #c2e1c72c;
+}
+
+.tip-card {
+    display: flex;
+    gap: 10px;
+    background: white;
+    padding: 40px 30px;
+    width: 70%;
+    border-radius: 10px;
+    margin: 20px 170px;
+    border: 1px solid #cccc;
+}
+
+.tip-card button {
+    color: white;
+    background: #157106;
+    border: none;
+    padding: 10px;
+    margin-top: 30px;
+    margin-left: 45%;
+}
+
+.tip-text {
+    width: 55%;
+    padding: 20px;
+    
+}
+.tip-text h2{
+      font-size: 18px;
+    text-align: center;
+    color: #157106;
+}
+.tip-text p{
+    padding-top: 30px;
+}
+
+.tip-image {
+    width: 30%;
+    height: 10vh;
+
+}
+.tip-image img {
+    width: 100%;
+    height: 30vh;
+}
