@@ -17,13 +17,11 @@ const Signup: React.FC = () => {
     event.preventDefault();
     setError("");
 
-    // Basic validation
     if (!name || !email || !username || !password || !country || !province) {
       setError("All fields are required");
       return;
     }
 
-    // Email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
       setError("Invalid email format");
@@ -31,13 +29,13 @@ const Signup: React.FC = () => {
     }
 
     try {
-      const response = await fetch("http://localhost:8000/api/signup/", {
+      const response = await fetch("http://localhost:8000/api/users/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          name,
+          first_name: name,
           email,
           username,
           password,
@@ -53,7 +51,7 @@ const Signup: React.FC = () => {
       }
 
       const result = await response.json();
-      if (result.success) {
+      if (response.status === 201) {
         navigate("/allproducts");
       } else {
         setError(result.message || "Sign up failed");
