@@ -4,41 +4,71 @@ import { Link } from "react-router-dom";
 interface Listing {
   id: number;
   product: string;
-  price: string;
+  price: number;
   seller: string;
+  image: string | null;
+  category: string;
 }
 
 const Marketplace: React.FC = () => {
-  const [listings, setListings] = useState<Listing[]>([
-    { id: 1, product: "Tractor", price: "5000 RWF", seller: "FarmEquip Ltd" },
-    {
-      id: 2,
-      product: "Fertilizer (50kg)",
-      price: "200 RWF",
-      seller: "AgriChem Co",
-    },
-    {
-      id: 3,
-      product: "Maize Seeds (1kg)",
-      price: "50 RWF",
-      seller: "SeedMaster",
-    },
-  ]);
-
-  const [newListing, setNewListing] = useState<Omit<Listing, "id">>({
-    product: "",
-    price: "",
-    seller: "",
+  const [listings, setListings] = useState<Listing[]>(() => {
+    const savedListings = localStorage.getItem("listings");
+    return savedListings ? JSON.parse(savedListings) : [];
   });
 
-  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+  const [newListing, setNewListing] = useState<Omit<Listing, "id" | "image">>({
+    product: "",
+    price: 0,
+    seller: "",
+    category: "",
+  });
+  const [image, setImage] = useState<File | null>(null);
+
+  const handleInputChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLSelectElement>
+  ) => {
     setNewListing({ ...newListing, [e.target.name]: e.target.value });
+  };
+
+  const handleImageChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setImage(e.target.files ? e.target.files[0] : null);
   };
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setListings([...listings, { id: listings.length + 1, ...newListing }]);
-    setNewListing({ product: "", price: "", seller: "" });
+
+    if (image) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        const newProduct = {
+          id: listings.length + 1,
+          ...newListing,
+          image: reader.result as string,
+        };
+        const updatedListings = [...listings, newProduct];
+        setListings(updatedListings);
+        localStorage.setItem("listings", JSON.stringify(updatedListings));
+        setNewListing({ product: "", price: 0, seller: "", category: "" });
+        setImage(null);
+      };
+      reader.readAsDataURL(image);
+    } else {
+      const newProduct = {
+        id: listings.length + 1,
+        ...newListing,
+        image: null,
+      };
+      const updatedListings = [...listings, newProduct];
+      setListings(updatedListings);
+      localStorage.setItem("listings", JSON.stringify(updatedListings));
+      setNewListing({ product: "", price: 0, seller: "", category: "" });
+    }
+  };
+
+  const handleRemove = (id: number) => {
+    const updatedListings = listings.filter((listing) => listing.id !== id);
+    setListings(updatedListings);
+    localStorage.setItem("listings", JSON.stringify(updatedListings));
   };
 
   return (
@@ -110,6 +140,9 @@ const Marketplace: React.FC = () => {
               <th className="text-left">Product</th>
               <th className="text-left">Price</th>
               <th className="text-left">Seller</th>
+              <th className="text-left">Category</th>
+              <th className="text-left">Image</th>
+              <th className="text-left">Actions</th>
             </tr>
           </thead>
           <tbody>
@@ -118,6 +151,26 @@ const Marketplace: React.FC = () => {
                 <td>{listing.product}</td>
                 <td>{listing.price}</td>
                 <td>{listing.seller}</td>
+                <td>{listing.category}</td>
+                <td>
+                  {listing.image ? (
+                    <img
+                      src={listing.image}
+                      alt={listing.product}
+                      className="w-16 h-16 object-cover"
+                    />
+                  ) : (
+                    "No image"
+                  )}
+                </td>
+                <td>
+                  <button
+                    onClick={() => handleRemove(listing.id)}
+                    className="bg-red-600 text-white px-4 py-2 rounded hover:bg-red-700"
+                  >
+                    Remove
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>
@@ -126,7 +179,13 @@ const Marketplace: React.FC = () => {
       <div className="bg-white p-6 rounded-lg shadow-md">
         <h3 className="text-xl font-semibold mb-4">Add New Listing</h3>
         <form onSubmit={handleSubmit}>
-          <input type="image" src="Product image" alt="" />
+          <input
+            type="file"
+            accept="image/*"
+            onChange={handleImageChange}
+            className="w-full p-2 mb-4 border rounded"
+            required
+          />
           <input
             type="text"
             name="product"
@@ -154,6 +213,22 @@ const Marketplace: React.FC = () => {
             className="w-full p-2 mb-4 border rounded"
             required
           />
+          <select
+            name="category"
+            value={newListing.category}
+            onChange={handleInputChange}
+            className="w-full p-2 mb-4 border rounded"
+            required
+          >
+            <option value="">Select Category</option>
+            <option value="fertilizers">Fertilizers</option>
+            <option value="seeds">Seeds</option>
+            <option value="pesticides">Pesticides</option>
+            <option value="farming tools">Farming Tools</option>
+            <option value="irrigation tools">Irrigation Tools</option>
+            <option value="test kits">Test Kits</option>
+            <option value="farm produce">Farm Produce</option>
+          </select>
           <button
             type="submit"
             className="bg-green-600 text-white px-4 py-2 rounded hover:bg-green-700"

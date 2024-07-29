@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { CartContext } from "../Context/CartContext";
 import { Link } from "react-router-dom";
 import "../styles/allproducts.css";
@@ -9,40 +9,23 @@ import { toast } from "react-toastify";
 
 interface Product {
   id: number;
-  name: string;
-  suppliername: string;
-  price: number; // Ensure this is a number
+  name: string; // Ensure 'name' property is included
+  seller: string; // Changed to 'seller' to match the admin side
+  price: number;
   image: string;
+  category: string;
 }
 
 const AllProducts: React.FC = () => {
   const { addToCart } = useContext(CartContext)!;
+  const [products, setProducts] = useState<Product[]>([]);
 
-  // Define your products array with all necessary details
-  const products: Product[] = [
-    {
-      id: 1,
-      name: "Roundup Herbicide",
-      suppliername: "Roundup",
-      price: 10000,
-      image: "/roundup-removebg-preview.png",
-    },
-    {
-      id: 2,
-      name: "Flower Seeds",
-      suppliername: "Roundup",
-      price: 5000,
-      image: "/flowerseeds-removebg-preview.png",
-    },
-    {
-      id: 3,
-      name: "Amidas Fertilizers",
-      suppliername: "Amidas",
-      price: 30000,
-      image: "/amidas_fertilizers-removebg-preview.png",
-    },
-    // Add more products as needed
-  ];
+  useEffect(() => {
+    const savedListings = localStorage.getItem("listings");
+    if (savedListings) {
+      setProducts(JSON.parse(savedListings));
+    }
+  }, []);
 
   const handleAddToCart = (product: Product) => {
     addToCart(product);
@@ -74,14 +57,14 @@ const AllProducts: React.FC = () => {
           <div className="cardssection">
             {products.map((product) => (
               <div className="singleproduct" key={product.id}>
-                <img src={product.image} alt={product.name} />
+                {product.image && (
+                  <img src={product.image} alt={product.name} />
+                )}
                 <div className="productinfo">
                   <div className="productdetails">
                     <p className="singlename">{product.name}</p>
                     <div className="supplierdetails">
-                      <p className="singlesuppliername">
-                        {product.suppliername}
-                      </p>
+                      <p className="singlesuppliername">{product.seller}</p>
                       <p className="singleprice">{product.price} FRW</p>
                     </div>
                   </div>
