@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 interface Listing {
   id: number;
-  product: string;
+  name: string; // Change this to 'name' to match AllProducts.tsx
   price: number;
   seller: string;
   image: string | null;
@@ -17,7 +17,7 @@ const Marketplace: React.FC = () => {
   });
 
   const [newListing, setNewListing] = useState<Omit<Listing, "id" | "image">>({
-    product: "",
+    name: "", // Change this to 'name' to match AllProducts.tsx
     price: 0,
     seller: "",
     category: "",
@@ -48,7 +48,7 @@ const Marketplace: React.FC = () => {
         const updatedListings = [...listings, newProduct];
         setListings(updatedListings);
         localStorage.setItem("listings", JSON.stringify(updatedListings));
-        setNewListing({ product: "", price: 0, seller: "", category: "" });
+        setNewListing({ name: "", price: 0, seller: "", category: "" });
         setImage(null);
       };
       reader.readAsDataURL(image);
@@ -61,7 +61,7 @@ const Marketplace: React.FC = () => {
       const updatedListings = [...listings, newProduct];
       setListings(updatedListings);
       localStorage.setItem("listings", JSON.stringify(updatedListings));
-      setNewListing({ product: "", price: 0, seller: "", category: "" });
+      setNewListing({ name: "", price: 0, seller: "", category: "" });
     }
   };
 
@@ -148,7 +148,7 @@ const Marketplace: React.FC = () => {
           <tbody>
             {listings.map((listing) => (
               <tr key={listing.id}>
-                <td>{listing.product}</td>
+                <td>{listing.name}</td> {/* Change this to 'name' */}
                 <td>{listing.price}</td>
                 <td>{listing.seller}</td>
                 <td>{listing.category}</td>
@@ -156,7 +156,7 @@ const Marketplace: React.FC = () => {
                   {listing.image ? (
                     <img
                       src={listing.image}
-                      alt={listing.product}
+                      alt={listing.name} // Change this to 'name'
                       className="w-16 h-16 object-cover"
                     />
                   ) : (
@@ -188,8 +188,8 @@ const Marketplace: React.FC = () => {
           />
           <input
             type="text"
-            name="product"
-            value={newListing.product}
+            name="name" // Change this to 'name'
+            value={newListing.name} // Change this to 'name'
             onChange={handleInputChange}
             placeholder="Product"
             className="w-full p-2 mb-4 border rounded"
