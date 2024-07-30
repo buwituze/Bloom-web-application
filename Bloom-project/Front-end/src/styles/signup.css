@@ -9,7 +9,6 @@ body{
 }
 
 .login {
-    padding-left: 34%;
     padding-right: 4%;
     display: flex;
     justify-content: center;
@@ -23,15 +22,14 @@ body{
     font-size: medium;
   }
 
-form {
+.login form {
     
-    padding: 5% 7% 5% 17%;
+    padding: 5% 7% 5% 1%;
     border: 1px solid #cccc;
     border-radius: 20px;
   } 
 
-
-form input {
+.login form input {
 
     width: 300px;
     height: 30px;
@@ -40,7 +38,7 @@ form input {
     padding-left: 10px;
   }
 
-form button {
+.login form button {
     background-color: green;
     color: white;
     margin-left: 30%;
@@ -49,17 +47,17 @@ form button {
     cursor: pointer;
   }
 
-form p {
+.login form p {
     text-align: center;
     padding-top: 5%;
   }
 
-form p a {
+.login form p a {
     color: blue;
     text-decoration: none;
   }
 
-form p a:hover {
+.login form p a:hover {
     text-decoration: underline;
   }
 
@@ -75,14 +73,3 @@ form input [type="checkbox"] {
     height: 20px;
     border-radius: 30px;
 }
-.rememnbercheckbox p {
-    color: black;
-}
-.signupcontainer {
-    position: fixed;
-    top: 100px;
-    left: 300px;
-}
-
-
-

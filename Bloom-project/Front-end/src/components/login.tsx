@@ -126,7 +126,7 @@ const Login: React.FC = () => {
       return;
     }
 
-    navigate("/homepage");
+    navigate("/farmer");
   };
 
   return (

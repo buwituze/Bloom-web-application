@@ -216,100 +216,96 @@ const Signup: React.FC = () => {
   return (
     <div>
       <NavBar />
-      <div className="signupcontainer">
-        <div className="signup">
-          <div className="login">
-            <h3>Sign Up</h3>
-            {error && <p className="error">{error}</p>}
-            <form onSubmit={handleSubmit}>
-              <div className="formdetails">
-                <div className="one">
-                  <div>
-                    <label htmlFor="name">Name</label> <br />
-                    <input
-                      type="text"
-                      id="name"
-                      value={name}
-                      onChange={(e) => setName(e.target.value)}
-                      required
-                    />
-                    <br /> <br />
-                  </div>
-                  <div>
-                    <label htmlFor="email">Email</label> <br />
-                    <input
-                      type="email"
-                      id="email"
-                      value={email}
-                      onChange={(e) => setEmail(e.target.value)}
-                      required
-                    />
-                    <br /> <br />
-                  </div>
-                </div>
-                <div className="two">
-                  <div>
-                    <label htmlFor="username">Username</label> <br />
-                    <input
-                      type="text"
-                      id="username"
-                      value={username}
-                      onChange={(e) => setUsername(e.target.value)}
-                      required
-                    />
-                    <br /> <br />
-                  </div>
-                  <div>
-                    <label htmlFor="password">Password</label> <br />
-                    <input
-                      type="password"
-                      id="password"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                      required
-                    />
-                    <br /> <br />
-                  </div>
-                </div>
-              </div>
+      <div className="login">
+        <h3>Sign Up</h3>
+        {error && <p className="error">{error}</p>}
+        <form onSubmit={handleSubmit}>
+          <div className="formdetails">
+            <div className="one">
               <div>
-                <label htmlFor="country">Country</label> <br />
+                <label htmlFor="name">Name</label> <br />
                 <input
                   type="text"
-                  id="country"
-                  value={country}
-                  onChange={(e) => setCountry(e.target.value)}
+                  id="name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                   required
                 />
                 <br /> <br />
               </div>
               <div>
-                <label htmlFor="province">Province</label> <br />
-                <select
-                  name="province"
-                  id="province"
-                  value={province}
-                  onChange={(e) => setProvince(e.target.value)}
+                <label htmlFor="email">Email</label> <br />
+                <input
+                  type="email"
+                  id="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   required
-                >
-                  <option value="">Select Province</option>
-                  <option value="Northern Province">Northern Province</option>
-                  <option value="Southern Province">Southern Province</option>
-                  <option value="Kigali City">Kigali City</option>
-                  <option value="Eastern Province">Eastern Province</option>
-                  <option value="Western Province">Western Province</option>
-                </select>
+                />
+                <br /> <br />
               </div>
-              <br /> <br />
+            </div>
+            <div className="two">
               <div>
-                <button type="submit">Sign up</button>
+                <label htmlFor="username">Username</label> <br />
+                <input
+                  type="text"
+                  id="username"
+                  value={username}
+                  onChange={(e) => setUsername(e.target.value)}
+                  required
+                />
+                <br /> <br />
               </div>
-              <p>
-                Already have an account? <Link to="/login">Sign in</Link>
-              </p>
-            </form>
+              <div>
+                <label htmlFor="password">Password</label> <br />
+                <input
+                  type="password"
+                  id="password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                  required
+                />
+                <br /> <br />
+              </div>
+            </div>
           </div>
-        </div>
+          <div>
+            <label htmlFor="country">Country</label> <br />
+            <input
+              type="text"
+              id="country"
+              value={country}
+              onChange={(e) => setCountry(e.target.value)}
+              required
+            />
+            <br /> <br />
+          </div>
+          <div>
+            <label htmlFor="province">Province</label> <br />
+            <select
+              name="province"
+              id="province"
+              value={province}
+              onChange={(e) => setProvince(e.target.value)}
+              required
+            >
+              <option value="">Select Province</option>
+              <option value="Northern Province">Northern Province</option>
+              <option value="Southern Province">Southern Province</option>
+              <option value="Kigali City">Kigali City</option>
+              <option value="Eastern Province">Eastern Province</option>
+              <option value="Western Province">Western Province</option>
+            </select>
+          </div>
+          <br /> <br />
+          <div>
+            <button type="submit">Sign up</button>
+          </div>
+          <p>
+            Already have an account? <Link to="/login">Sign in</Link>
+          </p>
+        </form>
       </div>
     </div>
   );

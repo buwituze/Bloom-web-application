@@ -28,6 +28,7 @@ import GroupCard from "./components/GroupCard";
 import GroupList from "./components/GroupList";
 import SuppComm from "./components/SuppCommunity";
 import CommunityPage from "./components/CommunityPage";
+// import Allproducts from "./components/farmer";
 import "./index.css";
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/weather-forecast" element={<Weather />} />
         <Route path="/marketplace" element={<Market />} />
         <Route path="/expert-advice" element={<Expert />} />
+        {/* <Route path="/farmer" element={<Allproducts />} /> */}
         <Route path="/community-forum" element={<Community />} />
         <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
