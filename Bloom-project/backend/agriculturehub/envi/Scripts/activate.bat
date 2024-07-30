@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\HP\Documents\Tonight\testing_bloom-App\backend\agriculturehub\envi
+set VIRTUAL_ENV=C:\Users\HP\OneDrive\Documents\Bloom-web-application\Bloom-project\backend\agriculturehub\envi
 
 if not defined PROMPT set PROMPT=$P$G
 

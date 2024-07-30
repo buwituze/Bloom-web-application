@@ -9,13 +9,13 @@ body{
 }
 
 .login {
-    padding-left: 34%;
-    padding-right: 34%;
-    background: #98c09f;
+  padding-left: 34%;
+  padding-right: 34%;
+  background: #98c09f;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  max-width: 400px; /* Adjust as needed */
+  max-width: 500px; 
   width: 100%; 
   }
   .login-container {
@@ -41,7 +41,7 @@ body{
 
 form {
     
-    padding: 8% 20% 8% 20%;
+    padding: 8% 20% 8% 13%;
     border: 1px solid #cccc;
     border-radius: 20px;
   } 
@@ -53,7 +53,7 @@ form input {
     height: 30px;
     border-radius: 10px;
     border: 1px solid #cccc;
-    padding-left: 10px;
+    padding-left: 2px;
   }
 
 form button {
@@ -79,12 +79,6 @@ form p a:hover {
     text-decoration: underline;
   }
 
-
-/*style the remembercheckbox part to make sure that the input with checkbox is on the sameline with the others, wight where the padding of the form ends.
-make sure its smaller than the other inputs
-flex the remembercheckbox so the checkbox and the Remember me p are on the same level horizontally and they are perfectly alined with other parts
-*/
-
 .remembercheckbox {
     padding-right: 30%;
     float: left;
@@ -100,4 +94,3 @@ form input [type="checkbox"] {
 .rememnbercheckbox p {
     color: black;
   }
-

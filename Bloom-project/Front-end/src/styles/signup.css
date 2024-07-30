@@ -5,6 +5,7 @@
 
 body{
     height: 150vh;
+    margin-left: 30%;
 }
 
 .login {
@@ -73,10 +74,13 @@ form input [type="checkbox"] {
     width: 10px;
     height: 20px;
     border-radius: 30px;
-  }
+}
 .rememnbercheckbox p {
     color: black;
-  }
+}
+.signupcontainer {
+    display: flex;
+}
 
 
 
