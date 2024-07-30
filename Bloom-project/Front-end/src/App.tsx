@@ -24,7 +24,11 @@ import MarketPrices from "./components/MarketPrices";
 import Weather from "./components/Weather";
 import Community from "./components/Community";
 import Market from "./components/Market";
-
+import GroupCard from "./components/GroupCard";
+import GroupList from "./components/GroupList";
+import SuppComm from "./components/SuppCommunity";
+import Sidebar from "./components/Sidebar";
+import "./index.css";
 function App() {
   return (
     <Router>
@@ -55,6 +59,8 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/DashboardContent" element={<DashboardContent />} />
         <Route path="/MarketPrices" element={<MarketPrices />} />
+
+        <Route path="/SuppCommunity" element={<SuppComm />} />
       </Routes>
     </Router>
   );

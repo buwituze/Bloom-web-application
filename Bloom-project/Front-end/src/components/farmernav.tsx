@@ -77,7 +77,7 @@ function FarmerNavbar() {
 
             <div className="dropdown">
               <li>
-                <Link to="#" className="dropbtn">
+                <Link to="/SuppCommunity" className="dropbtn">
                   Community
                 </Link>
               </li>
@@ -87,7 +87,7 @@ function FarmerNavbar() {
                 </p>
                 <br />
                 <p>
-                  <Link to="">Communities</Link>
+                  <Link to="/SuppCommunity">Communities</Link>
                 </p>
               </div>
             </div>
@@ -104,7 +104,7 @@ function FarmerNavbar() {
             </Link>
           </div>
           <div className="Profile">
-            <Link to="/MarketPrices">
+            <Link to="">
               <i className="bx bx-bell"></i>
             </Link>
           </div>
@@ -116,11 +116,11 @@ function FarmerNavbar() {
 
               <div className="profiledropdown-content">
                 <p>
-                  <Link to="/fertilizers">Profile</Link>
+                  <Link to="">Profile</Link>
                 </p>
                 <br />
                 <p>
-                  <Link to="/seeds">Settings</Link>
+                  <Link to="/MarketPrices">Admin</Link>
                 </p>
                 <br />
                 <p>
