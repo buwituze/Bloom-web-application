@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Sidebar from "./adminnavbar";
 
 interface ForecastItem {
   day: string;
@@ -18,63 +19,7 @@ const WeatherForecast: React.FC = () => {
 
   return (
     <div>
-      <div className="navbar">
-        <aside className="w-64 bg-green-700 text-white p-4 h-screen">
-          <h1 className="text-2xl font-bold mb-4">Bloom</h1>
-          <nav>
-            <ul>
-              <li className="mb-2">
-                <Link
-                  to="/dashboard-content"
-                  className="block p-2 hover:bg-green-600 rounded"
-                >
-                  Dashboard
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  to="/market-prices"
-                  className="block p-2 hover:bg-green-600 rounded"
-                >
-                  Market Prices
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  to="/weather-forecast"
-                  className="block p-2 hover:bg-green-600 rounded"
-                >
-                  Weather Forecast
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  to="/marketplace"
-                  className="block p-2 hover:bg-green-600 rounded"
-                >
-                  Marketplace
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  to="/expert-advice"
-                  className="block p-2 hover:bg-green-600 rounded"
-                >
-                  Expert Advice
-                </Link>
-              </li>
-              <li className="mb-2">
-                <Link
-                  to="/community-forum"
-                  className="block p-2 hover:bg-green-600 rounded"
-                >
-                  Community Forum
-                </Link>
-              </li>
-            </ul>
-          </nav>
-        </aside>
-      </div>
+      <Sidebar />
 
       <h2 className="text-3xl font-bold mb-6">Weather Forecast</h2>
       <div className="bg-white p-6 rounded-lg shadow-md">

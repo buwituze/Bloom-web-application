@@ -27,7 +27,7 @@ import Market from "./components/Market";
 import GroupCard from "./components/GroupCard";
 import GroupList from "./components/GroupList";
 import SuppComm from "./components/SuppCommunity";
-import Sidebar from "./components/Sidebar";
+import CommunityPage from "./components/CommunityPage";
 import "./index.css";
 function App() {
   return (
@@ -61,6 +61,7 @@ function App() {
         <Route path="/MarketPrices" element={<MarketPrices />} />
 
         <Route path="/SuppCommunity" element={<SuppComm />} />
+        <Route path="/CommunityPage" element={<CommunityPage />} />
       </Routes>
     </Router>
   );

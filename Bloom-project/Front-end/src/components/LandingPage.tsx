@@ -114,7 +114,7 @@ function LandingPage() {
         <div className="feature-list">
           <div className="feature-item">
             <div className="feature-icon">
-              <i className="fas fa-seedling"></i>
+              <img src="" alt="" />
             </div>
             <h4>E-commerce</h4>
             <p>
@@ -125,7 +125,7 @@ function LandingPage() {
 
           <div className="feature-item">
             <div className="feature-icon">
-              <i className="fas fa-seedling"></i>
+              <img src="" alt="" />
             </div>
             <h4>Expert Advice</h4>
             <p>
@@ -136,7 +136,7 @@ function LandingPage() {
 
           <div className="feature-item">
             <div className="feature-icon">
-              <i className="fas fa-seedling"></i>
+              <img src="" alt="" />
             </div>
             <h4>Community Forum</h4>
             <p>
@@ -147,7 +147,7 @@ function LandingPage() {
 
           <div className="feature-item">
             <div className="feature-icon">
-              <i className="fas fa-seedling"></i>
+              <img src="" alt="" />
             </div>
             <h4>Localized Information</h4>
             <p>
@@ -158,7 +158,7 @@ function LandingPage() {
 
           <div className="feature-item">
             <div className="feature-icon">
-              <i className="fas fa-seedling"></i>
+              <img src="" alt="" />
             </div>
             <h4>News Feed</h4>
             <p>
@@ -169,7 +169,7 @@ function LandingPage() {
 
           <div className="feature-item">
             <div className="feature-icon">
-              <i className="fas fa-seedling"></i>
+              <img src="" alt="" />
             </div>
             <h4>Event Calendar</h4>
             <p>

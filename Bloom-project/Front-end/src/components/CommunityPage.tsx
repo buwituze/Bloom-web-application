@@ -1,7 +1,6 @@
 import React, { useState, ChangeEvent, FormEvent } from "react";
 import { MessageCircle, ThumbsUp, ThumbsDown } from "lucide-react";
 
-// Define the type for a Post
 interface Post {
   id: number;
   author: string;
@@ -38,7 +37,6 @@ const CommunityPage: React.FC = () => {
     },
   ]);
 
-  // Define the type for newPost state
   const [newPost, setNewPost] = useState<{
     author: string;
     title: string;
@@ -48,7 +46,6 @@ const CommunityPage: React.FC = () => {
     title: "",
     content: "",
   });
-  //ts ignore
 
   const handleSubmit = (e: FormEvent<HTMLFormElement>): void => {
     e.preventDefault();
@@ -67,7 +64,9 @@ const CommunityPage: React.FC = () => {
     }
   };
 
-  const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>): void => {
+  const handleChange = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ): void => {
     const { name, value } = e.target;
     setNewPost((prevPost) => ({
       ...prevPost,
@@ -85,18 +84,24 @@ const CommunityPage: React.FC = () => {
             alt="Bloom Logo"
             className="mb-6"
           />
-          <div className="py-2 px-4 hover:bg-gray-200 cursor-pointer">My Garden</div>
-          <div className="py-2 px-4 hover:bg-gray-200 cursor-pointer">Crop Farming</div>
-          <div className="py-2 px-4 hover:bg-gray-200 cursor-pointer">Vegetable Farming</div>
-          <div className="py-2 px-4 hover:bg-gray-200 cursor-pointer">Livestock Farmers</div>
-          <div className="py-2 px-4 hover:bg-gray-200 cursor-pointer">Cattle Farmers</div>
-          <div className="py-2 px-4 hover:bg-gray-200 cursor-pointer">Aquaculture</div>
-          <div className="py-2 px-4 hover:bg-gray-200 cursor-pointer">Agroforestry</div>
-          <div className="py-2 px-4 hover:bg-gray-200 cursor-pointer">Support</div>
+          <div className="py-2 px-4 hover:bg-gray-200 cursor-pointer">
+            My Garden
+          </div>
+          <div className="py-2 px-4 hover:bg-gray-200 cursor-pointer">
+            Crop Farming
+          </div>
+          <div className="py-2 px-4 hover:bg-gray-200 cursor-pointer">
+            Vegetable Farming
+          </div>
+          <div className="py-2 px-4 hover:bg-gray-200 cursor-pointer">
+            Livestock Farmers
+          </div>
+          <div className="py-2 px-4 hover:bg-gray-200 cursor-pointer">
+            Support
+          </div>
         </div>
       </div>
 
-      {/* Main Content */}
       <div className="flex-1 p-8">
         <div
           className="bg-green-600 text-white p-8 rounded-t-lg bg-cover bg-center"
@@ -108,6 +113,32 @@ const CommunityPage: React.FC = () => {
 
         <div className="bg-white rounded-b-lg shadow-md">
           <div className="p-4">
+            {posts.map((post) => (
+              <div key={post.id} className="mb-6 border-b pb-4">
+                <div className="flex items-center mb-2">
+                  <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mr-3">
+                    {post.author[0]}
+                  </div>
+                  <span className="font-semibold">{post.author}</span>
+                </div>
+                <h2 className="text-xl font-bold mb-2">{post.title}</h2>
+                <p className="mb-2 whitespace-pre-wrap">{post.content}</p>
+                <div className="flex items-center text-gray-500">
+                  <button className="flex items-center mr-4">
+                    <ThumbsUp className="w-5 h-5 mr-1" />
+                    <span>{post.likes}</span>
+                  </button>
+                  <button className="flex items-center mr-4">
+                    <ThumbsDown className="w-5 h-5 mr-1" />
+                  </button>
+                  <button className="flex items-center">
+                    <MessageCircle className="w-5 h-5 mr-1" />
+                    <span>Comment</span>
+                  </button>
+                </div>
+              </div>
+            ))}
+
             <form onSubmit={handleSubmit} className="mb-6">
               <input
                 type="text"
@@ -140,32 +171,6 @@ const CommunityPage: React.FC = () => {
                 Add Post
               </button>
             </form>
-
-            {posts.map((post) => (
-              <div key={post.id} className="mb-6 border-b pb-4">
-                <div className="flex items-center mb-2">
-                  <div className="w-10 h-10 bg-green-500 rounded-full flex items-center justify-center text-white font-bold mr-3">
-                    {post.author[0]}
-                  </div>
-                  <span className="font-semibold">{post.author}</span>
-                </div>
-                <h2 className="text-xl font-bold mb-2">{post.title}</h2>
-                <p className="mb-2 whitespace-pre-wrap">{post.content}</p>
-                <div className="flex items-center text-gray-500">
-                  <button className="flex items-center mr-4">
-                    <ThumbsUp className="w-5 h-5 mr-1" />
-                    <span>{post.likes}</span>
-                  </button>
-                  <button className="flex items-center mr-4">
-                    <ThumbsDown className="w-5 h-5 mr-1" />
-                  </button>
-                  <button className="flex items-center">
-                    <MessageCircle className="w-5 h-5 mr-1" />
-                    <span>Comment</span>
-                  </button>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </div>
