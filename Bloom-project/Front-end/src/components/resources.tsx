@@ -109,7 +109,6 @@ const Resources: React.FC = () => {
               </Link>
             </div>
           </div>
-          {/* Dynamic articles from local storage */}
           {articles.map((article, index) => (
             <div key={index} className="tip-card">
               <div className="tip-text">
