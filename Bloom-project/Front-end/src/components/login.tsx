@@ -67,7 +67,6 @@ const Login: React.FC = () => {
               />
               <br /> <br />
             </div>
-
             <div>
               <label htmlFor="password">Password</label> <br />
               <input
