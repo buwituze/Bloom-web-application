@@ -1,6 +1,7 @@
 [build]
-  publish = "dist"
+  base = "Bloom-project/Front-end"
   command = "npm run build"
+  publish = "Bloom-project/Front-end/dist"
 
 [[redirects]]
   from = "/*"
