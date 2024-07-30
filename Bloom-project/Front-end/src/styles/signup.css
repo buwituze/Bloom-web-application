@@ -79,7 +79,9 @@ form input [type="checkbox"] {
     color: black;
 }
 .signupcontainer {
-    display: flex;
+    position: fixed;
+    top: 100px;
+    left: 300px;
 }
 
 
