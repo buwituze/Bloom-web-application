@@ -8,7 +8,7 @@ interface GroupListProps {
 const GroupList: React.FC<GroupListProps> = ({ groupType }) => {
   const groups: { [key: string]: { title: string; image: string }[] } = {
     "Kimironko Suppliers": [
-      { title: "My Garden", image: "/garden" },
+      { title: "My Garden", image: "/garden.jpg" },
       { title: "Kimironko Farming Suppliers", image: "/Farmer-homepage.jpeg" },
       // { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
       // { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
@@ -18,7 +18,7 @@ const GroupList: React.FC<GroupListProps> = ({ groupType }) => {
     "Crop Farming": [
       {
         title: "Crop Farmers",
-        image: "/farmerillustration3-removebg-preview.png",
+        image: "/FARMER.jpg",
       },
       { title: "Crop Farmers", image: "/agro.jpg" },
       // { title: "Crop Farmers", image: "/image2.jpg" },
@@ -30,7 +30,7 @@ const GroupList: React.FC<GroupListProps> = ({ groupType }) => {
       { title: "Vegetable Farmers", image: "/vegetables.jpg" },
       {
         title: "Vegetable Domestic Farmers",
-        image: "/vegetable_groceries-removebg-preview.jpg",
+        image: "/FARMER.jpg",
       },
       // { title: "Vegetable Farmers", image: "/image3.jpg" },
       // { title: "Vegetable Farmers", image: "/image3.jpg" },
