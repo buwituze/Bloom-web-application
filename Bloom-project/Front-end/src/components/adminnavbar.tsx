@@ -43,10 +43,7 @@ const Sidebar: React.FC = () => (
             </Link>
           </li>
           <li className="mb-2">
-            <Link
-              to="/expert-advice"
-              className="block p-2 hover:bg-green-600 rounded"
-            >
+            <Link to="/Expert" className="block p-2 hover:bg-green-600 rounded">
               Expert Advice
             </Link>
           </li>
