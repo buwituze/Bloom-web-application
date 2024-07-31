@@ -616,16 +616,16 @@ interface EventData {
 // Sample data for events
 const eventsData: EventData[] = [
   {
-    title: "Harvest Meeting 23/July/2024",
-    image: "https://via.placeholder.com/280x218",
+    title: "Harvest Meeting  23/July/2024",
+    image: "/rwandansuppliers.jpg",
   },
   {
     title: "Huye Farmers Meeting Aug/2024",
-    image: "https://via.placeholder.com/280x218",
+    image: "/Famer-homepage.jpeg",
   },
   {
     title: "Farmer-Supplier Event Aug/2024",
-    image: "https://via.placeholder.com/280x203",
+    image: "/hero-supplier-diverity-2720x-1080.webp",
   },
 ];
 
@@ -654,7 +654,7 @@ const Event: React.FC = () => {
         <img
           className="header-image"
           style={{ width: "100%", height: "auto" }}
-          src="https://via.placeholder.com/1440x480"
+          src="/events.jpg"
           alt="Events Header"
         />
         <div
