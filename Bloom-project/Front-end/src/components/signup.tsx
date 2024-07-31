@@ -62,7 +62,7 @@ const Signup: React.FC = () => {
         // If not JSON, log the response and set a generic error
         const text = await response.text();
         console.error("Unexpected response:", text);
-        setError("An unexpected error occurred. Please try again.");
+        setError(`Unexpected response (${response.status}): ${text}`);
       }
     } catch (error) {
       setError("An error occurred: " + (error as Error).message);
