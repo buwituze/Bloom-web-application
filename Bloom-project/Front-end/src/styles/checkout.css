@@ -17,7 +17,7 @@
     cursor: pointer;
     font-size: 14px;
     margin-left: 3%;
-    margin-top: 50px;
+    margin-top: 30%;
   }
   .buttons button:hover {
     background-color: rgb(214, 223, 214);
@@ -34,7 +34,7 @@
   }
   
   .totals {
-    height: 77.5vh;
+    height: 97vh;
     width: 40%;
     background-color: #175525;
     border-radius: 2px;
@@ -54,7 +54,7 @@
 
   
 .payment-methods {
-    padding-top: 5%;
+    padding-top: 2%;
     width: 40%;
   }
   .cardpayment label {
@@ -63,6 +63,8 @@
     font-size: 13px;
   }
   .payment-methods h2{
+    font-size: 20px;
+    font-weight: bold;
     color: #136627;
     padding-bottom: 5%;
     padding-left: 15%;
@@ -71,9 +73,10 @@
   .payment-methods h3{
     padding-bottom: 3%;
     font-size: 17px;
+    font-weight: 500;
   }
 .directpayment {
-    padding-top: 7%;
+    padding-top: 4%;
     display: flex;
     gap: 5px;
 }
@@ -90,7 +93,7 @@
   }
   
 .payment-methods button {
-    margin-top: 3%;
+    margin-top: 1%;
     background-color: #196e2e;
     color: white;
     padding: 5px;
@@ -116,6 +119,7 @@
 
   }
 .popup h3 {
+  font-weight: 600;
   padding-top: 10%;
   text-align: center;
   padding-bottom: 4%;

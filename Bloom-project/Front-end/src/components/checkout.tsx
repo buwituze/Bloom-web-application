@@ -56,7 +56,7 @@ const CheckOut: React.FC = () => {
               <h3>Pay with MTN MoMo</h3>
               <p>Send the sum amount to:</p> <br />
               <p>
-                <strong>078XXXXXXXX</strong>
+                <strong>078010071</strong>
               </p>
               <button onClick={handleConfirmPayment}>Confirm Payment</button>
             </div>
