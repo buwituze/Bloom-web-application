@@ -26,7 +26,7 @@ function Farmer() {
               Hello<span>Farmer</span>
             </h1>
             <h1>
-              Welcome To <strong>Bloom</strong>
+              Welcome To<strong>Bloom</strong>
             </h1>
             <p>
               Your go-to resource to advance your farming. Discover expert
