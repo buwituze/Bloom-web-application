@@ -43,11 +43,11 @@ color: white;
 }
 
 .homecontents {
-width: 47%;
+width: 50%;
 text-align: left;
 align-items: center;
 padding-top: 15%;
-padding-left: 22%;
+padding-left: 30%;
 padding-right: 10%;
 }
 
@@ -59,8 +59,8 @@ color: white;
 }
 
 .homecontents h1 span {
-padding-left: 7%;
-color: #1DC202;
+padding-left: 3%;
+color: #37d120;
 }
 
 .homecontents p {
