@@ -38,7 +38,7 @@ function Farmer() {
       <section className="aboutsections">
         <div className="abouts">
           <div
-            className="bannerimage"
+            className="homebannerimage"
             style={{ objectFit: "cover", width: "100%", height: "0%" }}
           >
             <img
