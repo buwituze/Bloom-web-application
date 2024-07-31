@@ -719,11 +719,11 @@ const Event: React.FC = () => {
 const navButtonStyle: React.CSSProperties = {
   width: "100%",
   padding: "10px",
-  margin: "10px 0",
+  margin: "4px 0",
   borderRadius: "20px",
   // border: "1px solid rgba(204, 204, 204, 0.80)",
   // background: "#157106",
-  color: "white",
+  color: "black",
   textAlign: "center",
   cursor: "pointer",
 };

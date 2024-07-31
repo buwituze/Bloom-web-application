@@ -26,16 +26,13 @@ function Farmer() {
               Hello<span>Farmer</span>
             </h1>
             <h1>
-              Welcome To<span>Bloom</span>
+              Welcome To<strong>Bloom</strong>
             </h1>
             <p>
               Your go-to resource to advance your farming. Discover expert
               insights, shop top-quality seeds, and connect with a vibrant
               farming community—all in one place.
             </p>
-            {/* <Link to="/login">
-              <button className="button">Get Started</button>
-            </Link> */}
           </div>
         </div>
       </header>
