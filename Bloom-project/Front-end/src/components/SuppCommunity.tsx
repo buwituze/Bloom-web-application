@@ -30,4 +30,4 @@ const SuppComm: React.FC = () => {
   );
 };
 
-export default ;
+export default SuppComm;
