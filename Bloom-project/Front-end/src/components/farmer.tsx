@@ -2,7 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import FarmerNavbar from "./farmernav";
 import "../styles/farmer.css";
-import "../styles/LandingPage.css";
 
 function Farmer() {
   const circularButtonStyle: React.CSSProperties = {
@@ -29,7 +28,7 @@ function Farmer() {
             <h1>
               Welcome To<span>Bloom</span>
             </h1>
-            <p>Your go-to resource for farming in Rwanda.</p>
+            <p>Your go-to resource to advance your farming.</p>
             {/* <Link to="/login">
               <button className="button">Get Started</button>
             </Link> */}
@@ -47,8 +46,8 @@ function Farmer() {
               alt=""
               style={{
                 width: "100%",
-                height: "75%",
-                marginTop: "690px",
+                height: "55%",
+                marginTop: "490px",
                 objectFit: "cover",
               }}
             />
