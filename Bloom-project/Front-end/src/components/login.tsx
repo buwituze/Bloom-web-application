@@ -36,7 +36,7 @@ const Login: React.FC = () => {
 
       const result = await response.json();
       if (result.success) {
-        navigate("/homepage");
+        navigate("/farmer");
       } else {
         setError(result.message || "Authentication failed");
       }

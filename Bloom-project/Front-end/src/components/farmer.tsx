@@ -4,47 +4,56 @@ import FarmerNavbar from "./farmernav";
 import "../styles/farmer.css";
 import "../styles/LandingPage.css";
 
-function AllProducts() {
-    const circularButtonStyle: React.CSSProperties = {
-        backgroundColor: 'green',
-        borderRadius: '50%',
-        width: '50px',
-        height: '50px',
-        color: 'white',
-        border: 'none',
-        fontSize: '20px',
-      };
-      const greyTextStyle: React.CSSProperties = {
-        color: 'grey',
-      };
+function Farmer() {
+  const circularButtonStyle: React.CSSProperties = {
+    backgroundColor: "green",
+    borderRadius: "50%",
+    width: "50px",
+    height: "50px",
+    color: "white",
+    border: "none",
+    fontSize: "20px",
+  };
+  const greyTextStyle: React.CSSProperties = {
+    color: "grey",
+  };
   return (
     <div className="landing-page">
       <FarmerNavbar />
       <header className="hero-sections">
         <div className="hero-layers">
           <div className="hero-contents">
-          <h1>
+            <h1>
               Hello<span>Farmer</span>
-              </h1>
+            </h1>
             <h1>
               Welcome To<span>Bloom</span>
             </h1>
-            <p>
-              Your go-to resource for farming in Rwanda.
-            </p>
-            <Link to="/login">
+            <p>Your go-to resource for farming in Rwanda.</p>
+            {/* <Link to="/login">
               <button className="button">Get Started</button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </header>
-      <section className="about-sections">
-      <div className="abouts">
-  <div className="bannerimage" style={{ objectFit: "cover", width: "100%", height: "0%" }}>
-    <img src="/farmer-barner.jpeg" alt="" style={{ width: "100%", height: "75%", marginTop: "690px", objectFit: "cover" }} />
-  </div>
-</div>
-
+      <section className="aboutsections">
+        <div className="abouts">
+          <div
+            className="bannerimage"
+            style={{ objectFit: "cover", width: "100%", height: "0%" }}
+          >
+            <img
+              src="/farmer-barner.jpeg"
+              alt=""
+              style={{
+                width: "100%",
+                height: "75%",
+                marginTop: "690px",
+                objectFit: "cover",
+              }}
+            />
+          </div>
+        </div>
       </section>
 
       <section className="productcategories-sections">
@@ -56,8 +65,8 @@ function AllProducts() {
               alt="Product 1"
               className="product-images"
             />
-                <p>Fertilizers</p>
-               <button className="button" >Explore</button>
+            <p>Fertilizers</p>
+            <button className="button">Explore</button>
           </div>
           <div className="product-categoryy">
             <img
@@ -66,7 +75,7 @@ function AllProducts() {
               className="product-images"
             />
             <p>Seeds</p>
-            <button className="button" >Explore</button>
+            <button className="button">Explore</button>
           </div>
           <div className="product-categoryy">
             <img
@@ -75,7 +84,7 @@ function AllProducts() {
               className="product-images"
             />
             <p>Pesticides</p>
-            <button className="button" >Explore</button>
+            <button className="button">Explore</button>
           </div>
 
           <div className="product-categoryy">
@@ -85,7 +94,7 @@ function AllProducts() {
               className="product-images"
             />
             <p>Farming Tools</p>
-            <button className="button" >Explore</button>
+            <button className="button">Explore</button>
           </div>
 
           <div className="product-categoryy">
@@ -95,7 +104,7 @@ function AllProducts() {
               className="product-images"
             />
             <p>Irrigation Tools</p>
-            <button className="button" >Explore</button>
+            <button className="button">Explore</button>
           </div>
           <div className="product-categoryy">
             <img
@@ -104,7 +113,7 @@ function AllProducts() {
               className="product-images"
             />
             <p>Test Kit</p>
-            <button className="button" >Explore</button>
+            <button className="button">Explore</button>
           </div>
           <div className="product-categoryy">
             <img
@@ -113,21 +122,24 @@ function AllProducts() {
               className="product-images"
             />
             <p>Farm Produce</p>
-            <button className="button" >Explore</button>
+            <button className="button">Explore</button>
           </div>
         </div>
       </section>
       <section className="services-sections">
         <div className="feature-lists">
-
           <div className="feature-item22">
             <div className="feature-icon">
               <i className="fas fa-seedling"></i>
             </div>
             <h4 className="heading">Today's Tips</h4>
-            <p className="paragraphs" >Use Integrated Pest Management(IPM) to control pests effectively and sustainably.Incorporate local biological agents,crop rotation and naturalpradators to keep you farm healty and productive.</p>
+            <p className="paragraphs">
+              Use Integrated Pest Management(IPM) to control pests effectively
+              and sustainably.Incorporate local biological agents,crop rotation
+              and naturalpradators to keep you farm healty and productive.
+            </p>
             <div className="button">
-              <button>Explore All</button> 
+              <button>Explore All</button>
             </div>
           </div>
           <div className="feature-item22">
@@ -135,16 +147,18 @@ function AllProducts() {
               <i className="fas fa-seedling"></i>
             </div>
             <h4>
-              <button style={circularButtonStyle}>B</button> Benitha Uwituze <span style={greyTextStyle}>Posted in My garden</span>
+              <button style={circularButtonStyle}>B</button> Benitha Uwituze{" "}
+              <span style={greyTextStyle}>Posted in My garden</span>
             </h4>
             <p>
-             Struggling with pests? Check out our community forum for effective pest control techniques shared by ...
+              Struggling with pests? Check out our community forum for effective
+              pest control techniques shared by ...
             </p>
           </div>
-          </div>
-          </section>
+        </div>
+      </section>
       <section className="previews">
-        <div className="features" >Product Recomendation</div>
+        <div className="features">Product Recomendation</div>
 
         <div className="productpreviews">
           <div>
@@ -161,7 +175,6 @@ function AllProducts() {
             <div className="buttons">
               <button>View All</button> <button>Add to Cart</button>
             </div>
-            
           </div>
           <div className="images">
             <img src="/appleseeds.jpg" alt="" />
@@ -223,4 +236,4 @@ function AllProducts() {
   );
 }
 
-export default AllProducts;
+export default Farmer;

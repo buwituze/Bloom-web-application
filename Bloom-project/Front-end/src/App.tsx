@@ -27,6 +27,7 @@ import Market from "./components/Market";
 import SuppComm from "./components/SuppCommunity";
 import CommunityPage from "./components/CommunityPage";
 import FarmerHome from "./components/farmerhome";
+import Farmer from "./components/farmer";
 import "./index.css";
 
 function App() {
@@ -62,6 +63,7 @@ function App() {
         <Route path="/CommunityPage" element={<CommunityPage />} />
         <Route path="/Admin" element={<Admin />} />
         <Route path="/farmerhome" element={<FarmerHome />} />
+        <Route path="/farmer" element={<Farmer />} />
       </Routes>
     </Router>
   );

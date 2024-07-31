@@ -85,7 +85,8 @@
     padding-top: 2%;
 }
 .aboutimage img{
-    width: 900px;
+  /* padding-right: 12%; */
+    width: 1000px;
     height: 340px;
 }
 
