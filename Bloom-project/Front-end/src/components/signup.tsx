@@ -29,7 +29,7 @@ const Signup: React.FC = () => {
     }
 
     try {
-      const response = await fetch("https://gakwaya.pythonanywhere.com/api/signup/", { // Updated endpoint
+      const response = await fetch("https://gakwaya.pythonanywhere.com/api/signup/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -44,17 +44,25 @@ const Signup: React.FC = () => {
         }),
       });
 
-      if (!response.ok) {
+      // Check if the response is JSON
+      const contentType = response.headers.get("Content-Type");
+      if (contentType && contentType.includes("application/json")) {
         const result = await response.json();
-        setError(result.message || "Failed to sign up");
-        return;
-      }
 
-      const result = await response.json();
-      if (response.status === 201) {
-        navigate("/allproducts");
+        if (response.ok) {
+          if (response.status === 201) {
+            navigate("/allproducts");
+          } else {
+            setError(result.message || "Sign up failed");
+          }
+        } else {
+          setError(result.message || "Sign up failed");
+        }
       } else {
-        setError(result.message || "Sign up failed");
+        // If not JSON, log the response and set a generic error
+        const text = await response.text();
+        console.error("Unexpected response:", text);
+        setError("An unexpected error occurred. Please try again.");
       }
     } catch (error) {
       setError("An error occurred: " + (error as Error).message);
