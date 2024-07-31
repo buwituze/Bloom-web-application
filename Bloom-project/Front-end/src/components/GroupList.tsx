@@ -8,27 +8,30 @@ interface GroupListProps {
 const GroupList: React.FC<GroupListProps> = ({ groupType }) => {
   const groups: { [key: string]: { title: string; image: string }[] } = {
     "Kimironko Suppliers": [
-      { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
-      { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
-      { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
-      { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
-      { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
-      { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
+      { title: "My Garden", image: "" },
+      { title: "Kimironko Farming Suppliers", image: "/farmer-homepage.jpg" },
+      // { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
+      // { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
+      // { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
+      // { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
     ],
     "Crop Farming": [
-      { title: "Crop Farmers", image: "/image2.jpg" },
-      { title: "Crop Farmers", image: "/image2.jpg" },
-      { title: "Crop Farmers", image: "/image2.jpg" },
-      { title: "Crop Farmers", image: "/image2.jpg" },
-      { title: "Crop Farmers", image: "/image2.jpg" },
-      { title: "Crop Farmers", image: "/image2.jpg" },
+      { title: "Crop Farmers", image: "/farmer-homepage.jpg" },
+      { title: "Crop Farmers", image: "/agro.jpg" },
+      // { title: "Crop Farmers", image: "/image2.jpg" },
+      // { title: "Crop Farmers", image: "/image2.jpg" },
+      // { title: "Crop Farmers", image: "/image2.jpg" },
+      // { title: "Crop Farmers", image: "/image2.jpg" },
     ],
     "Vegetable Farming": [
-      { title: "Vegetable Farmers", image: "/image3.jpg" },
-      { title: "Vegetable Farmers", image: "/image3.jpg" },
-      { title: "Vegetable Farmers", image: "/image3.jpg" },
-      { title: "Vegetable Farmers", image: "/image3.jpg" },
-      { title: "Vegetable Farmers", image: "/image3.jpg" },
+      { title: "Vegetable Farmers", image: "/vegetables.jpg" },
+      {
+        title: "Vegetable Domestic Farmers",
+        image: "/vegetable_groceries-removebg-preview.jpg",
+      },
+      // { title: "Vegetable Farmers", image: "/image3.jpg" },
+      // { title: "Vegetable Farmers", image: "/image3.jpg" },
+      // { title: "Vegetable Farmers", image: "/image3.jpg" },
     ],
     "Livestock Farmers": [
       { title: "Livestock Farmers", image: "/image4.jpg" },
@@ -60,14 +63,14 @@ const GroupList: React.FC<GroupListProps> = ({ groupType }) => {
       { title: "Agroforestry", image: "/image7.jpg" },
       { title: "Agroforestry", image: "/image7.jpg" },
     ],
-    Support: [
-      { title: "Support", image: "/image8.jpg" },
-      { title: "Support", image: "/image8.jpg" },
-      { title: "Support", image: "/image8.jpg" },
-      { title: "Support", image: "/image8.jpg" },
-      { title: "Support", image: "/image8.jpg" },
-      { title: "Support", image: "/image8.jpg" },
-    ],
+    // Support: [
+    //   { title: "Support", image: "/image8.jpg" },
+    //   { title: "Support", image: "/image8.jpg" },
+    //   { title: "Support", image: "/image8.jpg" },
+    //   { title: "Support", image: "/image8.jpg" },
+    //   { title: "Support", image: "/image8.jpg" },
+    //   { title: "Support", image: "/image8.jpg" },
+    // ],
   };
 
   const selectedGroups = groups[groupType];

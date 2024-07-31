@@ -83,7 +83,7 @@ function FarmerNavbar() {
               </li>
               <div className="dropdown-content">
                 <p>
-                  <Link to="">Events</Link>
+                  <Link to="/events">Events</Link>
                 </p>
                 <br />
                 <p>
