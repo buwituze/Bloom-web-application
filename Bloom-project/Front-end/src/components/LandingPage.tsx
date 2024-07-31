@@ -8,7 +8,7 @@ function LandingPage() {
   return (
     <div className="landing-page">
       <Navbar />
-      <header className="hero-section">
+      <header className="hero-section" id="home">
         <div className="hero-layer">
           <div className="hero-content">
             <h1>
@@ -25,7 +25,7 @@ function LandingPage() {
           </div>
         </div>
       </header>
-      <section className="about-section">
+      <section className="about-section" id="about">
         <h3>About</h3>
         <div className="about">
           <div>
@@ -43,141 +43,142 @@ function LandingPage() {
           </div>
         </div>
       </section>
-
-      <section className="productcategories-section">
-        <h3>Product Categories</h3>
-        <div className="product-categories">
-          <div className="product-category">
-            <img
-              src="/fertilizers-removebg-preview.png"
-              alt="Product 1"
-              className="product-image"
-            />
-            <p>Fertilizers</p>
-          </div>
-          <div className="product-category">
-            <img
-              src="/packed_seeds-removebg-preview.png"
-              alt="Product 2"
-              className="product-image"
-            />
-            <p>Seeds</p>
-          </div>
-          <div className="product-category">
-            <img
-              src="/plantbooster-removebg-preview.png"
-              alt="Product 1"
-              className="product-image"
-            />
-            <p>Pesticides</p>
-          </div>
-
-          <div className="product-category">
-            <img
-              src="/tillers-removebg-preview.png"
-              alt="Product 1"
-              className="product-image"
-            />
-            <p>Farming Tools</p>
-          </div>
-
-          <div className="product-category">
-            <img
-              src="/irrigation-removebg-preview.png"
-              alt="Product 1"
-              className="product-image"
-            />
-            <p>Irrigation Tools</p>
-          </div>
-
-          <div className="product-category">
-            <img
-              src="/soiltestkit-removebg-preview.png"
-              alt="Product 1"
-              className="product-image"
-            />
-            <p>Test Kits</p>
-          </div>
-
-          <div className="product-category">
-            <img
-              src="/trayofeggs.webp"
-              alt="Product 1"
-              className="product-image"
-            />
-            <p>Farm Produce</p>
-          </div>
-        </div>
-      </section>
-      <section className="services-section">
-        <h3>Services</h3>
-        <div className="feature-list">
-          <div className="feature-item">
-            <div className="feature-icon">
-              <img src="/Shopify.png" alt="" />
+      <section id="service-category">
+        <section className="productcategories-section">
+          <h3>Product Categories</h3>
+          <div className="product-categories">
+            <div className="product-category">
+              <img
+                src="/fertilizers-removebg-preview.png"
+                alt="Product 1"
+                className="product-image"
+              />
+              <p>Fertilizers</p>
             </div>
-            <h4>E-commerce</h4>
-            <p>
-              Easily shop for high-quality seeds, fertilizers, and farming tools
-              through our integrated marketplace.
-            </p>
-          </div>
-
-          <div className="feature-item">
-            <div className="feature-icon">
-              <img src="/Vector (2).png" alt="" />
+            <div className="product-category">
+              <img
+                src="/packed_seeds-removebg-preview.png"
+                alt="Product 2"
+                className="product-image"
+              />
+              <p>Seeds</p>
             </div>
-            <h4>Expert Advice</h4>
-            <p>
-              Gain access to valuable insights and best practices from
-              agricultural l experts tailored to your needs.
-            </p>
-          </div>
-
-          <div className="feature-item">
-            <div className="feature-icon">
-              <img src="/fluent_people-community-20-filled.png" alt="" />
+            <div className="product-category">
+              <img
+                src="/plantbooster-removebg-preview.png"
+                alt="Product 1"
+                className="product-image"
+              />
+              <p>Pesticides</p>
             </div>
-            <h4>Community Forum</h4>
-            <p>
-              Join our vibrant community to connect, share knowledge, and seek
-              support from fellow farmers.
-            </p>
-          </div>
 
-          <div className="feature-item">
-            <div className="feature-icon">
-              <img src="/teenyicons_location-solid.png" alt="" />
+            <div className="product-category">
+              <img
+                src="/tillers-removebg-preview.png"
+                alt="Product 1"
+                className="product-image"
+              />
+              <p>Farming Tools</p>
             </div>
-            <h4>Localized Information</h4>
-            <p>
-              Receive personalized recommendations and updates based on your
-              region’s climate and soil conditions.
-            </p>
-          </div>
 
-          <div className="feature-item">
-            <div className="feature-icon">
-              <img src="/Vector.png" alt="" />
+            <div className="product-category">
+              <img
+                src="/irrigation-removebg-preview.png"
+                alt="Product 1"
+                className="product-image"
+              />
+              <p>Irrigation Tools</p>
             </div>
-            <h4>News Feed</h4>
-            <p>
-              Follow the latest agricultural news and trends to stay ahead in
-              your farming journey.
-            </p>
-          </div>
 
-          <div className="feature-item">
-            <div className="feature-icon">
-              <img src="/Vector (1).png" alt="" />
+            <div className="product-category">
+              <img
+                src="/soiltestkit-removebg-preview.png"
+                alt="Product 1"
+                className="product-image"
+              />
+              <p>Test Kits</p>
             </div>
-            <h4>Event Calendar</h4>
-            <p>
-              Stay informed about local agricultural events, training sessions,
-              and opportunities through our calendar.
-            </p>
+
+            <div className="product-category">
+              <img
+                src="/trayofeggs.webp"
+                alt="Product 1"
+                className="product-image"
+              />
+              <p>Farm Produce</p>
+            </div>
           </div>
-        </div>
+        </section>
+        <section className="services-section">
+          <h3>Services</h3>
+          <div className="feature-list">
+            <div className="feature-item">
+              <div className="feature-icon">
+                <img src="/Shopify.png" alt="" />
+              </div>
+              <h4>E-commerce</h4>
+              <p>
+                Easily shop for high-quality seeds, fertilizers, and farming
+                tools through our integrated marketplace.
+              </p>
+            </div>
+
+            <div className="feature-item">
+              <div className="feature-icon">
+                <img src="/Vector (2).png" alt="" />
+              </div>
+              <h4>Expert Advice</h4>
+              <p>
+                Gain access to valuable insights and best practices from
+                agricultural l experts tailored to your needs.
+              </p>
+            </div>
+
+            <div className="feature-item">
+              <div className="feature-icon">
+                <img src="/fluent_people-community-20-filled.png" alt="" />
+              </div>
+              <h4>Community Forum</h4>
+              <p>
+                Join our vibrant community to connect, share knowledge, and seek
+                support from fellow farmers.
+              </p>
+            </div>
+
+            <div className="feature-item">
+              <div className="feature-icon">
+                <img src="/teenyicons_location-solid.png" alt="" />
+              </div>
+              <h4>Localized Information</h4>
+              <p>
+                Receive personalized recommendations and updates based on your
+                region’s climate and soil conditions.
+              </p>
+            </div>
+
+            <div className="feature-item">
+              <div className="feature-icon">
+                <img src="/Vector.png" alt="" />
+              </div>
+              <h4>News Feed</h4>
+              <p>
+                Follow the latest agricultural news and trends to stay ahead in
+                your farming journey.
+              </p>
+            </div>
+
+            <div className="feature-item">
+              <div className="feature-icon">
+                <img src="/Vector (1).png" alt="" />
+              </div>
+              <h4>Event Calendar</h4>
+              <p>
+                Stay informed about local agricultural events, training
+                sessions, and opportunities through our calendar.
+              </p>
+            </div>
+          </div>
+        </section>
       </section>
       <section className="preview">
         <h4>Product Preview</h4>
@@ -205,7 +206,7 @@ function LandingPage() {
         </div>
       </section>
 
-      <section className="contact">
+      <section className="contact" id="contact">
         <h3>Contact Us</h3>
 
         <form>

@@ -1,32 +1,32 @@
-.header {
+.landingheader {
     display: flex;
     background-color: #1C4D20;
     color: white;
-    gap: 50%;
+    gap: 60%;
   }
   
-  .header img{
+  .landingheader img{
     padding-left: 30%;
     width: 80px;
     height: 70px;
   }
-  .header nav ul {
+  .landingheader nav ul {
     padding-top: 25px;
     display: flex;
     list-style: none;
-    gap: 15%;
+    gap: 10%;
   }
-  .header nav {
+  .landingheader nav {
     display: flex;
-    gap: 65%;
+    gap: 50%;
   }
-  .header nav ul li a {
+  .landingheader nav ul li a {
     color: white;
     text-decoration: none;
   }
-.header button{
+.landingheader button{
     margin-top: 30%;
-    padding: 7px;
+    padding: 5px;
     background-color: white;
     color: green;
     border: none;

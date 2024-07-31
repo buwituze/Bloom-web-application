@@ -5,7 +5,7 @@ import "../styles/Navbar.css";
 
 function Navbar() {
   return (
-    <header className="header">
+    <header className="landingheader">
       <Link to="/">
         <img src="/bloomlogo3-removebg-preview.png" alt="bloom" />
       </Link>
@@ -19,7 +19,7 @@ function Navbar() {
               <a href="#about">About</a>
             </li>
             <li>
-              <a href="#services">Services</a>
+              <a href="#service-category">Services</a>
             </li>
             <li>
               <a href="#contact">Contact</a>
