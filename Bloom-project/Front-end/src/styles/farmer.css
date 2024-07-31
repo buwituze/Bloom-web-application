@@ -1,0 +1,423 @@
+/* 
+.bannerimage{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+} */
+  .bannerimage img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+     z-index: -1; /*Ensure the image is behind the text */
+  } 
+  
+  .bannerimage div {
+    position: relative;
+    z-index: 1;
+    color: white; /* Adjust text color for better visibility */
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to the text */
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero-layers {
+background-color: rgba(0, 0, 0, 0.5);
+height: 97vh;
+width: 100%;
+}
+
+.hero-sections {
+background-image: url("/Farmer-homepage.jpeg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+height: 93vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+color: white;
+}
+
+.hero-contents {
+width: 30%;
+text-align: left;
+align-items: center;
+padding-top: 15%;
+padding-left: 42%;
+padding-right: 10%;
+}
+
+.hero-contents h1 {
+margin-bottom: 2rem;
+font-size: 25px;
+font-weight: bold;
+color: white;
+}
+
+.hero-contents h1 span {
+padding-left: 14%;
+color: #1DC202;
+}
+
+.hero-contents p {
+color: white;
+margin-top: 1rem;
+margin-bottom: 2rem;
+}
+
+.hero-contents button {
+background-color: white;
+color: green;
+border: none;
+padding: 0.5rem 1rem;
+border-radius: 5px;
+cursor: pointer;
+}
+
+.about-sections {
+background-color: rgba(192, 246, 246, 0.15);
+height: 70vh;
+align-items: center;
+object-fit: cover;
+
+}
+
+.about-sections h3 {
+font-size: xx-large;
+color: green;
+text-align: center;
+padding-top: 4%;
+}
+.abouts{
+width: 70%;
+padding-left: 17%;
+display: flex;
+gap: 20px;
+align-items: center;
+justify-content: center;
+}
+.abouts p{
+padding-top: 2%;
+}
+.aboutimage img{
+width: 350px;
+height: 340px;
+}
+
+.productcategories-sections {
+background-color: white;
+height: 70vh;
+align-items: center;
+}
+
+.productcategories-sections h3 {
+font-size: xx-large;
+color: green;
+text-align: center;
+padding-top: 5%;
+}
+
+.product-categoriess {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 20px;
+padding-top: 3%;
+}
+
+.product-categoryy {
+width: 170px;
+height: 230px;
+background-color: #EDFEEE;
+border-radius: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center; 
+text-align: center;
+}
+
+.product-categoryy img {
+width: 150px;
+height: 150px;
+}
+
+.product-categoryy p {
+font-size: 16px;
+font-weight: 500;
+padding-top: 5%;
+}
+
+.product-categoryy button {
+background-color: white;
+color: green;
+border: none;
+border: 1px solid #cccc;
+border-radius: 10px;
+padding: 5px 10px;
+cursor: pointer;
+margin-top: 7px;
+}
+
+.product-categoryy buttons-but {
+    background-color: green;
+    color: white;
+    border: none;
+    border: 1px solid #cccc;
+    border-radius: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-top: 7px;
+    }
+.services-sections {
+background-color: #FFFFFF;
+padding-left: 10%;
+padding-right: 10%;
+}
+
+.services-sections h3 {
+font-size: xx-large;
+color: green;
+text-align: center;
+padding-bottom: 4%;
+}
+
+.feature-lists {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 20px;
+padding-top: 3%;
+}
+
+.feature-item22 {
+    width: 1072px;
+    height: 200px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid #CCCCCC;
+    display: flex;
+    flex-direction: column;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 2%;
+    margin-right: 8%;
+}
+
+.feature-item img {
+width: 80px;
+height: 80px;
+}
+
+.features {
+font-weight: 800;
+padding-top: 5%;
+font-size: x-large;
+font-family: ui-monospace;
+color: green;
+text-align: center;
+margin-right: 349px;
+padding-top: 3%;
+}
+
+.feature-item p {
+font-size: 13px;
+padding-top: 2%;
+}
+
+
+.previews {
+height: 90vh;
+align-items: center;
+margin-top: 40px;
+background-color: #edfeee
+
+}
+
+.previews h4 {
+    font-size: 28px;
+    color: green;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 5%;
+}
+.productpreviews{
+width: 80%;
+padding-left: 10%;
+display: flex;
+gap: 40px;
+align-items: center;
+justify-content: center;
+}
+.images{
+background-color: #C3FF76;
+padding: 60px;
+border-radius: 20px;
+}
+.texts h5{
+    color: green;
+    font-size: 20px;
+    padding-top: 9%;
+    margin-left: 120px;
+    padding-bottom: 3%;
+}
+.preductpreview p{
+padding-top: 5%;
+padding-right: 20%;
+}
+.prices{
+padding-top: 4%;
+color: rgb(170, 7, 7);
+font-weight: bold;
+}
+.previews img{
+width: 280px;
+height: 270px;
+}
+
+.button{
+padding-top: 5%;
+padding-left: 35%;
+}
+.button button{
+
+background-color: green;
+color: white;
+border: none;
+border: 1px solid #cccc;
+padding: 5px 10px;
+cursor: pointer;
+}
+
+.contacts {
+
+padding-left: 24%;
+padding-right: 24%;
+}
+
+.contacts h3 {
+color: green;
+text-align: center;
+padding-top: 15%;
+padding-bottom: 7%;
+font-size: xx-large;
+}
+
+forms {
+
+padding: 5% 10% 5% 30%;
+border: 1px solid #cccc;
+border-radius: 20px;
+} 
+
+forms h4 {
+color: green;
+padding-bottom: 13%;
+padding-left: 15%;
+}
+
+forms input {
+
+width: 300px;
+height: 30px;
+border: 1px solid #cccc;
+padding-left: 10px;
+}
+
+forms textarea {
+width: 300px;
+height: 100px;
+border: 1px solid #cccc;    
+border-radius: 10px;
+padding-left: 10px;
+}
+
+forms button {
+background-color: green;
+color: white;
+margin-left: 30%;
+border: none;
+padding: 10px 20px;
+cursor: pointer;
+}
+
+
+.footer-sections {
+background-color: black;
+color: white;
+margin-top: 7%;
+
+
+}
+
+.topparts {
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 100px;
+padding-right: 100px;
+border-bottom: 1px solid #cccc;
+}
+
+.topparts h3 {
+color: white;
+}
+
+.bottomparts {
+display: flex;
+gap: 10%;
+padding-left: 100px;
+padding-right: 100px;
+padding-top: 20px;
+padding-bottom: 20px;
+} 
+
+.footerimages img{
+width: 150px;
+height: 150px;
+}
+
+.bottomparts ul li a {
+text-decoration: none;
+color: white;
+font-size: 16px;
+}
+.bottomparts ul{
+list-style: none;
+}
+.bottomparts h5{
+padding-top: 10%;
+color: white;
+font-size: 17px;
+padding-bottom: 10px;
+padding-left: 35px;
+}
+
+.paragraphs{
+    font-family:"Arial, sans-serif";
+    font-size: 18px;
+    margin-top: 22px;
+}
+
+.headings{
+    font-family:"Arial, sans-serif";
+    font-size: 18px;
+}
+
+.buttons{
+    font-size: 16px;
+    margin-left: 40%;
+    margin-top: -65px;
+}
