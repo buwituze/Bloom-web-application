@@ -621,11 +621,11 @@ const eventsData: EventData[] = [
   },
   {
     title: "Huye Farmers Meeting Aug/2024",
-    image: "/Famer-homepage.jpeg",
+    image: "/Farmer-homepage.jpeg",
   },
   {
     title: "Farmer-Supplier Event Aug/2024",
-    image: "/hero-supplier-diverity-2720x-1080.webp",
+    image: "/rwandansuppliers.jpg",
   },
 ];
 
@@ -701,7 +701,7 @@ const Event: React.FC = () => {
               placeholder="Search Events"
               style={searchInputStyle}
             />
-            <button style={searchButtonStyle}>Search</button>
+            {/* <button style={searchButtonStyle}>Search</button> */}
           </div>
           <button style={organizeButtonStyle}>Organize Event</button>
           <div style={eventsContainerStyle}>
@@ -721,8 +721,8 @@ const navButtonStyle: React.CSSProperties = {
   padding: "10px",
   margin: "10px 0",
   borderRadius: "20px",
-  border: "1px solid rgba(204, 204, 204, 0.80)",
-  background: "#157106",
+  // border: "1px solid rgba(204, 204, 204, 0.80)",
+  // background: "#157106",
   color: "white",
   textAlign: "center",
   cursor: "pointer",
