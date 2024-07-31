@@ -17,11 +17,11 @@ function Farmer() {
     color: "grey",
   };
   return (
-    <div className="landing-page">
+    <div>
       <FarmerNavbar />
-      <header className="hero-sections">
-        <div className="hero-layers">
-          <div className="hero-contents">
+      <header className="homesections">
+        <div className="homelayers">
+          <div className="homecontents">
             <h1>
               Hello<span>Farmer</span>
             </h1>

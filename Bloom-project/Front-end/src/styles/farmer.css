@@ -11,9 +11,9 @@
   .homebannerimage div {
     position: relative;
     z-index: 1;
-    color: white; /* Adjust text color for better visibility */
+    color: white; 
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent background to the text */
+    background: rgba(0, 0, 0, 0.5); 
   }
 
   * {
@@ -22,13 +22,13 @@
 }
 
 
-.hero-layers {
+.homelayers {
 background-color: rgba(0, 0, 0, 0.5);
 height: 97vh;
 width: 100%;
 }
 
-.hero-sections {
+.homesections {
 background-image: url("/Farmer-homepage.jpeg");
 background-size: cover;
 background-position: center;
@@ -42,34 +42,34 @@ text-align: center;
 color: white;
 }
 
-.hero-contents {
-width: 40%;
+.homecontents {
+width: 50%;
 text-align: left;
 align-items: center;
 padding-top: 15%;
-padding-left: 32%;
+padding-left: 22%;
 padding-right: 10%;
 }
 
-.hero-contents h1 {
+.homecontents h1 {
 margin-bottom: 2rem;
 font-size: 25px;
 font-weight: bold;
 color: white;
 }
 
-.hero-contents h1 span {
+.homecontents h1 span {
 padding-left: 14%;
 color: #1DC202;
 }
 
-.hero-contents p {
+.homecontents p {
 color: white;
 margin-top: 1rem;
 margin-bottom: 2rem;
 }
 
-.hero-contents button {
+.homecontents button {
 background-color: white;
 color: green;
 border: none;
