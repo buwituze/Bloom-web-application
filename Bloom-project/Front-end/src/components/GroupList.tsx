@@ -8,15 +8,18 @@ interface GroupListProps {
 const GroupList: React.FC<GroupListProps> = ({ groupType }) => {
   const groups: { [key: string]: { title: string; image: string }[] } = {
     "Kimironko Suppliers": [
-      { title: "My Garden", image: "" },
-      { title: "Kimironko Farming Suppliers", image: "/farmer-homepage.jpg" },
+      { title: "My Garden", image: "/garden" },
+      { title: "Kimironko Farming Suppliers", image: "/Farmer-homepage.jpeg" },
       // { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
       // { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
       // { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
       // { title: "Kimironko Suppliers", image: "/vegetables.jpg" },
     ],
     "Crop Farming": [
-      { title: "Crop Farmers", image: "/farmer-homepage.jpg" },
+      {
+        title: "Crop Farmers",
+        image: "/farmerillustration3-removebg-preview.png",
+      },
       { title: "Crop Farmers", image: "/agro.jpg" },
       // { title: "Crop Farmers", image: "/image2.jpg" },
       // { title: "Crop Farmers", image: "/image2.jpg" },

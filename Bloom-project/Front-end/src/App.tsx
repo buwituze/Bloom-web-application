@@ -28,7 +28,7 @@ import SuppComm from "./components/SuppCommunity";
 import CommunityPage from "./components/CommunityPage";
 import FarmerHome from "./components/farmerhome";
 import Farmer from "./components/farmer";
-import Event from "./components/event";
+import Event from "./components/events";
 import "./index.css";
 
 function App() {
@@ -65,7 +65,7 @@ function App() {
         <Route path="/Admin" element={<Admin />} />
         <Route path="/farmerhome" element={<FarmerHome />} />
         <Route path="/farmer" element={<Farmer />} />
-        <Route path="/event" element={<Event />} />
+        <Route path="/events" element={<Event />} />
       </Routes>
     </Router>
   );
