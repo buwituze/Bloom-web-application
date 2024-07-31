@@ -19,30 +19,27 @@ import Cart from "./components/cart";
 import Checkout from "./components/checkout";
 import Admin from "./components/Admin";
 import DashboardContent from "./components/DashboardContent";
-import Expert from "./components/Expert";
+import ExpertAdvice from "./components/Expert";
 import MarketPrices from "./components/MarketPrices";
 import Weather from "./components/Weather";
 import Community from "./components/Community";
 import Market from "./components/Market";
-import GroupCard from "./components/GroupCard";
-import GroupList from "./components/GroupList";
 import SuppComm from "./components/SuppCommunity";
 import CommunityPage from "./components/CommunityPage";
-// import Allproducts from "./components/farmer";
+import FarmerHome from "./components/farmerhome";
 import "./index.css";
+
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/admin" element={<Admin />} />
+        <Route path="/" element={<LandingPage />} />
         <Route path="/dashboard-content" element={<DashboardContent />} />
         <Route path="/market-prices" element={<MarketPrices />} />
         <Route path="/weather-forecast" element={<Weather />} />
         <Route path="/marketplace" element={<Market />} />
-        <Route path="/expert-advice" element={<Expert />} />
-        {/* <Route path="/farmer" element={<Allproducts />} /> */}
+        <Route path="/expert" element={<ExpertAdvice />} />
         <Route path="/community-forum" element={<Community />} />
-        <Route path="/" element={<LandingPage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/Navbar" element={<Navbar />} />
         <Route path="/signup" element={<Signup />} />
@@ -61,9 +58,10 @@ function App() {
         <Route path="/checkout" element={<Checkout />} />
         <Route path="/DashboardContent" element={<DashboardContent />} />
         <Route path="/MarketPrices" element={<MarketPrices />} />
-
         <Route path="/SuppCommunity" element={<SuppComm />} />
         <Route path="/CommunityPage" element={<CommunityPage />} />
+        <Route path="/Admin" element={<Admin />} />
+        <Route path="/farmerhome" element={<FarmerHome />} />
       </Routes>
     </Router>
   );

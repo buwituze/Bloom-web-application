@@ -31,7 +31,7 @@ function FarmerNavbar() {
         <div>
           <ul>
             <li>
-              <Link to="/LandingPage">Home</Link>
+              <Link to="/farmerhome">Home</Link>
             </li>
 
             <div className="dropdown">
@@ -120,7 +120,7 @@ function FarmerNavbar() {
                 </p>
                 <br />
                 <p>
-                  <Link to="/MarketPrices">Admin</Link>
+                  <Link to="/DashboardContent">Admin</Link>
                 </p>
                 <br />
                 <p>
