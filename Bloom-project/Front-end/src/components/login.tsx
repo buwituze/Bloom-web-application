@@ -43,7 +43,7 @@ const Login: React.FC = () => {
         localStorage.setItem("token", result.token);
         localStorage.setItem("username", result.username);
         // Navigate to the homepage or dashboard
-        navigate("/homepage");
+        navigate("/farmer");
       } else {
         setError("Authentication failed");
       }
