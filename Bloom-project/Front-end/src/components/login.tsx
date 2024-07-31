@@ -20,13 +20,16 @@ const Login: React.FC = () => {
     }
 
     try {
-      const response = await fetch("https://gakwaya.pythonanywhere.com/api/login/", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ username, password }),
-      });
+      const response = await fetch(
+        "https://gakwaya.pythonanywhere.com/api/login/",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ username, password }),
+        }
+      );
 
       if (!response.ok) {
         const result = await response.json();
@@ -40,7 +43,7 @@ const Login: React.FC = () => {
         localStorage.setItem("token", result.token);
         localStorage.setItem("username", result.username);
         // Navigate to the homepage or dashboard
-        navigate("/homepage");
+        navigate("/farmer");
       } else {
         setError("Authentication failed");
       }

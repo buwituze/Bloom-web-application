@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import FarmerNavbar from "./farmernav";
 import "../styles/LandingPage.css";
 
-function AllProducts() {
+function FarmerHome() {
   return (
     <div className="landing-page">
       <FarmerNavbar />
@@ -11,16 +11,14 @@ function AllProducts() {
         <div className="hero-layer">
           <div className="hero-content">
             <h1>
+              Hello <span>Farmer</span>
+              <br /> <br />
               Welcome to <span>Bloom</span>
             </h1>
-            <p>
-              Your go-to resource for farming in Rwanda. Discover expert
-              insights, shop top-quality seeds, and connect with a vibrant
-              farming community—all in one place.
-            </p>
-            <Link to="/login">
+            <p>Your go-to resource for farming in Rwanda.</p>
+            {/* <Link to="/login">
               <button className="button">Get Started</button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </header>
@@ -230,6 +228,7 @@ function AllProducts() {
           <div className="Support">
             <h5>Support</h5>
             <ul>
+              calendar
               <li>Contact: 0790100718</li>
               <li>Email: c.gakwaya@alustudent.com</li>
               <li>Location: Bumbogo, Kigali City, Rwanda</li>
@@ -256,4 +255,4 @@ function AllProducts() {
   );
 }
 
-export default AllProducts;
+export default FarmerHome;
