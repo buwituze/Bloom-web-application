@@ -18,4 +18,4 @@ const GroupCard: React.FC<GroupCardProps> = ({ title, image }) => (
   </div>
 );
 
-export default GroupCard;
+export default ;
