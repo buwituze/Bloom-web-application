@@ -23,7 +23,7 @@ const CheckOut: React.FC = () => {
           <br />
           <p>Total amount: {getTotalAmount()} FRW</p> <br /> <br />
           <p>
-            Location:
+            Location: Eastern Province
             {/* {userlocation}*/}
           </p>
           <div className="buttons">
