@@ -26,7 +26,7 @@ const Resources: React.FC = () => {
       <FarmerNavbar />
       <section className="resources">
         <div className="intro">
-          <img src="/Resourcesimage.jpg" alt="" />
+          <img src="/resourcesimage.png" alt="" />
         </div>
         <div className="facts">
           <div className="fact-card">
